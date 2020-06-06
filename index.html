@@ -33,11 +33,78 @@
 
             background-size: cover;
         }
+
+        #poem-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            background-color: #fff9c1d6;
+            font-style: oblique;
+            font-family: "Courier New", Courier, monospace;
+            overflow-y: scroll;
+            min-width: 350px;
+            font-size: 95%;
+        }
+
+        #credit {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            color: white;
+            font-style: oblique;
+            font-family: "Courier New", Courier, monospace;
+            overflow-y: scroll;
+            min-width: 350px;
+            font-size: small;
+            text-align: center;
+        }
+
+        /* condition for screen size minimum of 500px */
+        @media (max-width: 400px) {
+            #poem-container {
+                padding: 10px;
+                min-width: 200px;
+                font-size: small;
+            }
+            #credit {
+                font-size: x-small;
+            }
+        }
     </style>
 </head>
 <body>
   <video id="fine-video" preload="auto" autoplay loop muted>
     <source src="thisisfine.mp4" type="video/mp4" >
   </video>
+  <div id="poem-container">
+      <p id="poem">
+        <b>To Andrea</b><br><br>
+
+        My oldest friends would think it queer <br>
+        that I allow my own career <br>
+        to keep me till such hours awake <br>
+        so many evenings of the year <br>
+        <br>
+        I save my changes, then run make <br>
+        and give my wrists a little shake <br>
+        The build process fails to complete <br>
+        it says I’ve made a small mistake. <br>
+        <br>
+        I search for bugs on every line <br>
+        Ask my debugger for a sign <br>
+        When it’s found i’ll feel sublime <br>
+        ‘till then I mutter: “this is fine” <br>
+      </p>
+  </div>
+  <a id="credit" href="http://pages.cs.wisc.edu/~sjackso/sepoem.html">First 2 verses credit of sjackso.</a>
 </body>
 </html><!-- This html is fine. -->
