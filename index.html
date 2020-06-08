@@ -34,6 +34,11 @@
             background-size: cover;
         }
 
+        #from {
+            font-size: 80%;
+            color: gray;
+        }
+
         #poem-container {
             position: fixed;
             top: 50%;
@@ -82,12 +87,10 @@
     </style>
 </head>
 <body>
-  <video id="fine-video" preload="auto" autoplay loop muted>
-    <source src="thisisfine.mp4" type="video/mp4" >
-  </video>
+  <img id="fine-video" src="thisisfine.gif" alt="">
   <div id="poem-container">
       <p id="poem">
-        <b>To Andrea</b><br><br>
+        <b>To Andrea</b> <span id="from"> from Kristina and Joe</span><br><br>
 
         My oldest friends would think it queer <br>
         that I allow my own career <br>
@@ -101,7 +104,7 @@
         <br>
         I search for bugs on every line <br>
         Ask my debugger for a sign <br>
-        When it’s found i’ll feel sublime <br>
+        When it’s found I’ll feel sublime <br>
         ‘till then I mutter: “this is fine” <br>
       </p>
   </div>
